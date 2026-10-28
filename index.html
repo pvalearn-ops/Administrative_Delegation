@@ -164,6 +164,17 @@ tr.total td{color:var(--accent-2);font-weight:700;border-top:2px solid rgba(214,
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .gallery .photo{aspect-ratio:4/3}
 .gallery.g4c{grid-template-columns:repeat(4,1fr)}
+.awards{display:grid;grid-template-columns:repeat(10,1fr);gap:10px}
+.awards .photo{grid-column:span 2;aspect-ratio:3/4}
+.awards .photo.big{grid-column:span 5;aspect-ratio:4/3}
+/* journal articles */
+.articles td.y{font-family:var(--num);font-size:17px;font-weight:700;color:var(--accent-ink);white-space:nowrap;width:56px}
+.articles tr.new td{background:rgba(245,184,0,.08)}
+.journal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
+.journal .photo{aspect-ratio:3/4}
+.journal .photo.w{grid-column:span 2;aspect-ratio:auto}
+.linkbtn{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:7px 16px;border-radius:999px;background:var(--accent);color:#2a1f00;font-weight:700;font-size:14px;text-decoration:none}
+.linkbtn:hover{background:#e0a800}
 
 /* hero */
 #hero{min-height:100vh;align-items:flex-start;padding-top:22vh}
@@ -262,6 +273,9 @@ tr.total td{color:var(--accent-2);font-weight:700;border-top:2px solid rgba(214,
   .g3,.g4,.vision,.tl{grid-template-columns:1fr 1fr}
   .agenda{grid-template-columns:1fr}
   .gallery,.gallery.g4c{grid-template-columns:1fr 1fr}
+  .awards{grid-template-columns:repeat(6,1fr)}
+  .awards .photo{grid-column:span 2}.awards .photo.big{grid-column:span 6}
+  .journal{grid-template-columns:1fr 1fr}
   .toc{display:none}
   .hud{bottom:14px;left:16px}.hud .pct{font-size:30px}.hud .bar{width:110px}
   .tools{right:16px;bottom:14px}
@@ -522,13 +536,14 @@ tr.total td{color:var(--accent-2);font-weight:700;border-top:2px solid rgba(214,
   <div class="card wide">
     <div class="kicker">壹・機構緣起 7/7</div>
     <h2>獲獎紀錄</h2>
-    <div class="gallery">
-      <figure class="photo" style="margin:0"><img src="assets/img/p5.jpg" alt="頒獎典禮" loading="lazy"></figure>
-      <figure class="photo" style="margin:0"><img src="assets/img/p30.jpg" alt="ISO 17020 認證授證" loading="lazy"><figcaption>ISO/IEC 17020 認證授證</figcaption></figure>
-      <figure class="photo" style="margin:0"><img src="assets/img/p29.jpg" alt="會議" loading="lazy"></figure>
-      <figure class="photo contain" style="margin:0"><img src="assets/img/p31.jpg" alt="認證證書" loading="lazy"><figcaption>認證證書</figcaption></figure>
-      <figure class="photo contain" style="margin:0"><img src="assets/img/p27.jpg" alt="優等獎牌" loading="lazy"><figcaption>年終考評優等</figcaption></figure>
-      <figure class="photo contain" style="margin:0"><img src="assets/img/p28.jpg" alt="優等獎座" loading="lazy"><figcaption>年終考評優等</figcaption></figure>
+    <div class="awards">
+      <figure class="photo big" style="margin:0"><img src="assets/img/aw_meeting.jpg" alt="代檢業務會議" loading="lazy"></figure>
+      <figure class="photo big" style="margin:0"><img src="assets/img/aw_iso17020.jpg" alt="ISO 17020 認證授證" loading="lazy"><figcaption>ISO/IEC 17020 認證授證</figcaption></figure>
+      <figure class="photo contain" style="margin:0"><img src="assets/img/aw_cert.jpg" alt="TAF 認證證書" loading="lazy"><figcaption>TAF 認證證書</figcaption></figure>
+      <figure class="photo contain" style="margin:0"><img src="assets/img/aw_plaque.jpg" alt="年終考評優等獎牌" loading="lazy"><figcaption>年終考評優等</figcaption></figure>
+      <figure class="photo contain" style="margin:0"><img src="assets/img/aw_dragon.jpg" alt="年終考評優等獎座" loading="lazy"><figcaption>年終考評優等</figcaption></figure>
+      <figure class="photo contain" style="margin:0"><img src="assets/img/aw_112.webp" alt="112 年度年終考評優等獎座" loading="lazy"><figcaption>112 年度考評優等</figcaption></figure>
+      <figure class="photo contain" style="margin:0"><img src="assets/img/aw_113.webp" alt="113 年度年終考評優等獎座" loading="lazy"><figcaption>113 年度考評優等</figcaption></figure>
     </div>
   </div>
 </section>
@@ -645,6 +660,38 @@ tr.total td{color:var(--accent-2);font-weight:700;border-top:2px solid rgba(214,
 
 <section class="r">
   <div class="card wide">
+    <div class="kicker">貳・執行代檢業務人員管理與訓練</div>
+    <h2>代檢人員專業期刊發表</h2>
+    <div class="grid g2" style="align-items:start;gap:22px">
+      <div class="tablewrap"><table class="articles">
+        <tr><th>年度</th><th>文章名稱</th></tr>
+        <tr><td class="y">113</td><td>儲槽型式解析（儲槽液體及液化氣體）</td></tr>
+        <tr><td class="y">114</td><td>油槽延長內部檢查作業概述</td></tr>
+        <tr><td class="y">114</td><td>危險性設備內部延長期限與替代檢查概述</td></tr>
+        <tr><td class="y">114</td><td>設備與管線之試壓作業解析</td></tr>
+        <tr class="new"><td class="y">115</td><td>設備與管線用料施行熱處理提升機械性能及防蝕</td></tr>
+        <tr class="new"><td class="y">115</td><td>球型槽銲接工程 WPS／PQR 及非破壞檢測概述</td></tr>
+        <tr class="new"><td class="y">115</td><td>API STD 1104 之 WPS／PQR 及 NDT 檢測概述</td></tr>
+        <tr class="new"><td class="y">115</td><td>大修規劃：關鍵設備、管線及儀控系統檢修概述</td></tr>
+      </table></div>
+      <div>
+        <figure class="photo" style="margin:0;aspect-ratio:1061/872"><img src="assets/img/jr_web.jpg" alt="協會網站產業資訊專區" loading="lazy"><figcaption>協會網站・產業資訊專區</figcaption></figure>
+        <a class="linkbtn" href="https://reurl.cc/RR3nVG" target="_blank" rel="noopener">文章分享 reurl.cc/RR3nVG ↗</a>
+      </div>
+    </div>
+    <div class="journal">
+      <figure class="photo w" style="margin:0"><img src="assets/img/jr_113_tank.jpg" alt="儲槽型式解析" loading="lazy"><figcaption>儲槽型式解析</figcaption></figure>
+      <figure class="photo w" style="margin:0"><img src="assets/img/jr_115_sphere.jpg" alt="球型槽銲接工程 WPS/PQR 及非破壞檢測概述" loading="lazy"><figcaption>球型槽銲接工程 WPS／PQR</figcaption></figure>
+      <figure class="photo" style="margin:0"><img src="assets/img/jr_115_api1104.jpg" alt="API STD 1104 之 WPS/PQR 及 NDT 檢測概述" loading="lazy"><figcaption>API STD 1104</figcaption></figure>
+      <figure class="photo" style="margin:0"><img src="assets/img/jr_08_cover.jpg" alt="會刊第 08 期封面" loading="lazy"><figcaption>會刊第 08 期</figcaption></figure>
+      <figure class="photo" style="margin:0"><img src="assets/img/jr_08_cover2.jpg" alt="會刊第 08 期" loading="lazy"></figure>
+      <figure class="photo" style="margin:0"><img src="assets/img/jr_08_back.jpg" alt="會刊第 08 期封底" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="card wide">
     <div class="kicker">貳・人員管理與訓練</div>
     <h2>技術能力及經驗</h2>
     <p>增進代行檢查員專業素養、確保檢查品質、提升服務效率，配合主管機關預算規劃訓練，使代行檢查員學以致用、與時俱進。</p>
@@ -659,7 +706,25 @@ tr.total td{color:var(--accent-2);font-weight:700;border-top:2px solid rgba(214,
       <div class="tile"><b>代行檢查員・專業訓練</b><p>國際規範（API、NACE、AWS、ASME）、非破壞檢測技術</p></div>
       <div class="tile"><b>事務人員</b><p>視業務需要選派採購專業人員訓練及職能講座</p></div>
     </div>
-    <p class="note">115 年度預計再派訓 4 員 ISO/IEC 17020（115/10/23–24）。</p>
+    <p class="note">115 年度預計再派訓 4 員 ISO/IEC 17020（受訓日期 115/10/23–24；受訓人員：李纘源、曹文祥、劉祥弘、謝雅晴）。</p>
+  </div>
+</section>
+
+<section class="r">
+  <div class="card wide">
+    <div class="kicker">貳・人員管理與訓練</div>
+    <h2>職場霸凌與性騷擾防治</h2>
+    <div class="grid g2" style="align-items:start;gap:22px">
+      <ul class="commit">
+        <li><span class="ck">✓</span>本會完成制訂【職場霸凌防治措施、申訴及懲戒處理】相關辦法，以落實職場性騷擾防治工作。</li>
+        <li><span class="ck">✓</span>依《性別平等工作法》修法後相關規定，僱用 30 人以上之事業單位應定期辦理性騷擾防治教育訓練，並以主管及參與申訴事件處理、調查及決議人員為對象。</li>
+        <li><span class="ck">✓</span><span>本會<b style="color:var(--ink)">孫理事長及許秘書長</b>已受訓完成【高雄市政府勞工局舉辦－115 年度職場性騷擾防治宣導講座】。</span></li>
+      </ul>
+      <div class="grid g2" style="gap:10px">
+        <figure class="photo contain" style="margin:0;aspect-ratio:3/4"><img src="assets/img/hr_notice1.jpg" alt="115 年度職場性騷擾防治宣導講座錄取通知" loading="lazy"><figcaption>講座錄取通知</figcaption></figure>
+        <figure class="photo contain" style="margin:0;aspect-ratio:3/4"><img src="assets/img/hr_notice2.jpg" alt="講座報名資料" loading="lazy"><figcaption>報名資料</figcaption></figure>
+      </div>
+    </div>
   </div>
 </section>
 
