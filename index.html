@@ -167,6 +167,13 @@ tr.total td{color:var(--accent-2);font-weight:700;border-top:2px solid rgba(214,
 .awards{display:grid;grid-template-columns:repeat(10,1fr);gap:10px}
 .awards .photo{grid-column:span 2;aspect-ratio:3/4}
 .awards .photo.big{grid-column:span 5;aspect-ratio:4/3}
+/* expert portraits */
+.experts .tile{display:flex;gap:14px;align-items:flex-start}
+.experts .tile b small{display:block;font-size:13px;font-weight:500;color:var(--accent-ink);margin-top:2px}
+.experts .tile p{font-size:13.5px;line-height:1.6;margin:6px 0 0}
+.experts .tile p.sp{color:var(--ink-3)}
+.experts .tile p.sp em{font-style:normal;font-weight:700;color:var(--ink-2);margin-right:6px}
+.experts .tile img{flex:none;width:72px;height:96px;object-fit:cover;object-position:center top;border-radius:10px;border:1px solid var(--line);background:#e6edf4}
 /* journal articles */
 .articles td.y{font-family:var(--num);font-size:17px;font-weight:700;color:var(--accent-ink);white-space:nowrap;width:56px}
 .articles tr.new td{background:rgba(245,184,0,.08)}
@@ -507,13 +514,14 @@ tr.total td{color:var(--accent-2);font-weight:700;border-top:2px solid rgba(214,
       <div class="stat"><div class="v" data-count="4">0</div><div class="l">化工／職安／機械 博士</div></div>
       <div class="stat"><div class="v" data-count="12">0</div><div class="l">職安／管理類 碩士</div></div>
     </div>
-    <div class="grid g3">
-      <div class="tile hl"><b>孫榮宏　理事長</b><p>高雄科技大學教授兼系副主任・國立中山大學機電工程博士</p></div>
-      <div class="tile"><b>陳俊六　名譽理事長</b><p>職安法規／化工製程／金屬塗層專家；前高雄市政府勞動檢查處處長</p></div>
-      <div class="tile"><b>王振華　創會理事長</b><p>機械設備完整性專家；高雄第一科大環安系教授，專長機械安全與可靠度、設備延長開放評估</p></div>
-      <div class="tile"><b>謝祖州　技術委員會主委</b><p>前台灣中油林園煉油廠廠長；工業管線完整性管理、化工製程及石化廠管理</p></div>
-      <div class="tile"><b>張一岑　顧問・化工專家</b><p>美國肯塔基大學化學博士、德州註冊化學工程師；前工研院能源與礦業所副所長</p></div>
-      <div class="tile"><b>許世希　顧問・腐蝕防治專家</b><p>前台灣中油桃園煉油廠廠長；CUI 檢查技術、製程安全管理、機械完整性</p></div>
+    <p class="lead" style="margin-bottom:14px">理監事／專業計畫團隊為職安、製程、技術等產業專家。</p>
+    <div class="grid g3 experts">
+      <div class="tile hl"><img src="assets/img/ex_sun.jpg" alt="孫榮宏" loading="lazy"><div><b>孫榮宏<small>理事長</small></b><p>高雄科技大學兼任教授<br>國立中山大學機電工程博士</p></div></div>
+      <div class="tile"><img src="assets/img/ex_chen.jpg" alt="陳俊六" loading="lazy"><div><b>陳俊六<small>名譽理事長・職安法規／化工製程／金屬塗層專家</small></b><p>前高雄市政府勞動檢查處處長退休<br>國立高雄應用科技大學能源科技與化工材料研究所博士</p><p class="sp"><em>專長</em>材料表面處理・職業安全與衛生・高危害製程安全管理・作業環境採樣分析實務</p></div></div>
+      <div class="tile"><img src="assets/img/ex_wang.jpg" alt="王振華" loading="lazy"><div><b>王振華<small>創會理事長・機械設備完整性專家</small></b><p>國立高雄科技大學環安系教授</p><p class="sp"><em>專長</em>設備完整性・機械安全和可靠度工程・儀控系統量化風險分析・設備延長開放評估</p></div></div>
+      <div class="tile"><img src="assets/img/ex_hsieh.jpg" alt="謝祖州" loading="lazy"><div><b>謝祖州<small>技術委員會主委</small></b><p>前台灣中油股份有限公司林園煉油廠廠長</p><p class="sp"><em>專長</em>工業管線完整性管理・化工製程及石化廠管理</p></div></div>
+      <div class="tile"><img src="assets/img/ex_chang.jpg" alt="張一岑" loading="lazy"><div><b>張一岑<small>顧問・化工專家</small></b><p>國立高雄科技大學環安系教授<br>美國肯塔基大學化學博士<br>美國德克薩斯州註冊化學工程師<br>前工研院能源與礦業研究所副所長</p><p class="sp"><em>專長</em>化工製程設計與模擬</p></div></div>
+      <div class="tile"><img src="assets/img/ex_hsu.jpg" alt="許世希" loading="lazy"><div><b>許世希<small>顧問・腐蝕防治專家</small></b><p>前台灣中油股份有限公司桃園煉油廠廠長</p><p class="sp"><em>專長</em>CUI 檢查技術・設檢腐蝕專家・製程安全管理・機械完整性</p></div></div>
     </div>
   </div>
 </section>
